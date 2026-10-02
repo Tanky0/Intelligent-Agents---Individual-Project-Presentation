@@ -1,0 +1,39 @@
+[project]
+name = "research-agent"
+version = "0.1.0"
+description = "LLM-powered academic research planning agent (UoEO MSc, Intelligent Agents, Unit 11)"
+requires-python = ">=3.13,<3.14"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+# Network-dependent tests are opt-in: the default suite must run offline and
+# deterministically, both for CI-style repeatability and so that a live API
+# outage can never masquerade as a code defect.
+markers = [
+    "network: requires live external APIs (deselected by default)",
+    "llm: requires a live LLM endpoint (deselected by default)",
+    "rationale: checks every design decision has a written why (run before freeze)",
+]
+addopts = "-m 'not network and not llm and not rationale' --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+# Checked on top of the defaults: E501 catches over-long lines and W291/W293
+# catch trailing spaces. None of these are on by default, so "ruff check"
+# would otherwise report a clean file that still breaks the project style.
+extend-select = ["E501", "W291", "W293"]
+
+# next(...) is shorter than list(...)[0] but harder to read for someone
+# learning the language, and every line here has to be explainable.
+ignore = ["RUF015"]

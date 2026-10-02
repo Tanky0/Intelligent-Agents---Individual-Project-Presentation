@@ -1,0 +1,75 @@
+# --- Secrets: this repository is public from the first commit, so these must
+# --- never be committed. GitHub push protection is the second line of defence.
+.env
+.env.local
+*.key
+
+# Replies as they arrive. Only the ones approved for the demonstration are
+# committed, and they go through scripts/approve_replies.py (R-07).
+data/captured_replies/
+
+# Replies taken back out of the published set while their publication basis is
+# settled. They are kept so the captured responses remain available for audit
+# and possible controlled replay, and they are kept out of the repository
+# because whether they may be published is the open question. Recovering them from the history
+# instead would not be the same thing: history can be rewritten, and a copy
+# nobody has verified is not a copy.
+data/withdrawn_from_publication/
+
+# Replies waiting between being approved and being published. Publishing is
+# all-or-nothing: a reply is written here first and moved into the published
+# folder only when its manifest entry is written, so anything left here is an
+# approval that did not finish. It sits inside the published folder, which is
+# committed, so it is ignored rather than relied on to be empty: a file that
+# never became published must not reach the repository by being nearby (R-11).
+data/recorded_replies/.waiting_to_be_published/
+
+# The screening samples as they were drawn, with the abstracts in them. The
+# labels beside them are prepared for public release; the abstracts are not,
+# because publishing somebody else's abstract needs a basis nobody has
+# established (R-12). What the rule governs is what may leave the working
+# copy.
+data/hand_screened_sample/drawn_for_screening/
+
+# The CLEF review's records as fetched, and every measurement run's output,
+# which holds the model's summaries and extracts of them. Same rule as the
+# draw above: the identifiers and labels beside this folder are committed, the
+# text of the papers is not (TF-03, R-12).
+data/clef_tar/private/
+
+# Buffers written at the hand-over between the two agents (ID-10). Every run
+# writes one, and it holds the abstracts and open-access full text the run
+# retrieved. Publishing retrieved text is a deliberate act, not something a run
+# should do on its own, which is the same rule the captured replies follow. A
+# buffer kept as evidence is added on purpose with "git add -f".
+evidence/sample_run/*.json
+
+# The run log holds what one run did on one day, and is appended to as it
+# works. Kept for the same reason the buffer is (FR-15, ID-10).
+evidence/run_log.jsonl
+
+# Local databases and caches (evidence is committed deliberately, not by accident)
+*.db
+*.sqlite
+*.sqlite3
+.cache/
+http_cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.Rhistory

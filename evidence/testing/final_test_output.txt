@@ -1,0 +1,51 @@
+The test output for the release, 1 October 2026
+
+Three commands, run one after the other from the repository root with the
+project's interpreter (Python 3.13.14, pytest 9.1.1, Ruff 0.16.4) on the
+tree this commit carries. What follows each command is what it printed. The
+"-p no:cacheprovider" option only keeps pytest from writing its cache folder
+into the tree. The suite is described on docs/testing.md, section 2. The
+three skipped checks here are the ones that make a symbolic link, which
+Windows does not allow without a privilege; the one deselected is the
+rationale check, which the third command runs on its own. Six further checks
+ask git about this repository and skip only where there is no repository to
+ask, so they run here and not in an exported copy.
+
+This file was written from the run below, so it is the only file in the
+commit that the run did not read. No test reads it.
+
+It replaces the output recorded on 24 September. The counts remain 1212
+passed, 3 skipped and 1 deselected. The record was updated because two test
+files changed on 1 October. The earlier output therefore described code that
+this release no longer carries, although the README identified it as the run
+made on the released code. A record tied to a different code tree is
+incorrect even when its figures happen to match. The figures at the technical
+freeze on 20 September, 1188 passed, 3 skipped and 1 deselected, are kept in
+docs/testing.md, section 2.
+
+$ python -m pytest -q -p no:cacheprovider
+........................................................................ [  5%]
+........................................................................ [ 11%]
+........................................................................ [ 17%]
+........................................................................ [ 23%]
+........................................................................ [ 29%]
+........................................................................ [ 35%]
+........................................................................ [ 41%]
+..........................s....................................s........ [ 47%]
+........................................................................ [ 53%]
+........................................................................ [ 59%]
+............s........................................................... [ 65%]
+........................................................................ [ 71%]
+........................................................................ [ 77%]
+........................................................................ [ 82%]
+........................................................................ [ 88%]
+........................................................................ [ 94%]
+...............................................................          [100%]
+1212 passed, 3 skipped, 1 deselected in 177.30s (0:02:57)
+
+$ python -m ruff check .
+All checks passed!
+
+$ python -m pytest -q -p no:cacheprovider -m rationale
+.                                                                        [100%]
+1 passed, 1215 deselected in 4.37s

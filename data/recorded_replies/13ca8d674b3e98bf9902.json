@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-09-17T05:58:16+00:00",
+  "method": "GET",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+  "asked": {
+    "db": "pubmed",
+    "term": "drug X condition Y trial",
+    "retmax": "50",
+    "retmode": "json"
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "application/json"
+  },
+  "body": "{\"esearchresult\":{\"count\":\"3\",\"idlist\":[\"900000001\",\"900000002\",\"900000003\"]}}"
+}

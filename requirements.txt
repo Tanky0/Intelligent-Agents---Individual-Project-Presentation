@@ -1,0 +1,23 @@
+# Exact pins. Unpinned agent-framework dependencies are the most likely
+# single cause of a mid-project break, and the project has no schedule slack
+# to absorb one. Versions confirmed working on Python 3.13.14 by the LangGraph
+# spike in tests/integration/test_langgraph_spike.py.
+langgraph==1.2.11
+langchain-core==1.6.0
+# Not asked for directly. langchain-core loads it, and on 1 September 2026
+# Windows Smart App Control began refusing to load version 0.17.0, which is
+# not signed. Nothing in the project would start. Version 0.16.2 loads, so it
+# is pinned here rather than left to be chosen, because a clean install would
+# otherwise take the newest again and stop in the same way (R-09).
+uuid_utils==0.16.2
+langchain-google-genai==4.3.5
+google-genai==2.20.0
+pydantic==2.13.4
+pydantic-settings==2.15.0
+httpx==0.28.1
+tenacity==9.1.4
+pandas==3.0.5
+rapidfuzz==3.14.5
+streamlit==1.62.0
+python-dotenv==1.2.3
+truststore==0.10.4

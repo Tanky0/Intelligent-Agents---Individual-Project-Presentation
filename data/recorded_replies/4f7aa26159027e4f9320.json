@@ -1,0 +1,15 @@
+{
+  "captured_at": "2026-09-17T05:58:16+00:00",
+  "method": "POST",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi",
+  "asked": {
+    "db": "pubmed",
+    "id": "900000001,900000002,900000003",
+    "retmode": "xml"
+  },
+  "status": 200,
+  "headers": {
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "body": "<?xml version=\"1.0\"?>\n<PubmedArticleSet>\n  <PubmedArticle>\n    <MedlineCitation>\n      <PMID>900000001</PMID>\n      <Article>\n        <Journal><Title>Journal of Invented Trials</Title>\n          <JournalIssue><PubDate><Year>2019</Year></PubDate></JournalIssue>\n        </Journal>\n        <ArticleTitle>A randomised trial of drug X in condition Y</ArticleTitle>\n        <Abstract><AbstractText>Forty patients with condition Y were given drug X for eight weeks. Symptoms improved in most of them.</AbstractText></Abstract>\n        <AuthorList>\n          <Author><LastName>One</LastName><Initials>A</Initials></Author>\n        </AuthorList>\n        <PublicationTypeList>\n          <PublicationType>Randomized Controlled Trial</PublicationType>\n        </PublicationTypeList>\n      </Article>\n    </MedlineCitation>\n  </PubmedArticle>\n  <PubmedArticle>\n    <MedlineCitation>\n      <PMID>900000002</PMID>\n      <Article>\n        <Journal><Title>Journal of Invented Reviews</Title>\n          <JournalIssue><PubDate><Year>2020</Year></PubDate></JournalIssue>\n        </Journal>\n        <ArticleTitle>Drug X and condition Y: a narrative review</ArticleTitle>\n        <Abstract><AbstractText>This review summarises what is known about drug X in condition Y. No new patients were studied.</AbstractText></Abstract>\n        <AuthorList>\n          <Author><LastName>Two</LastName><Initials>B</Initials></Author>\n        </AuthorList>\n        <PublicationTypeList>\n          <PublicationType>Review</PublicationType>\n        </PublicationTypeList>\n      </Article>\n    </MedlineCitation>\n  </PubmedArticle>\n  <PubmedArticle>\n    <MedlineCitation>\n      <PMID>900000003</PMID>\n      <Article>\n        <Journal><Title>Journal of Invented Trials</Title>\n          <JournalIssue><PubDate><Year>2021</Year></PubDate></JournalIssue>\n        </Journal>\n        <ArticleTitle>Adverse events of drug X in a small cohort</ArticleTitle>\n        <Abstract><AbstractText>Twelve patients taking drug X were followed for adverse events. Two stopped treatment because of nausea.</AbstractText></Abstract>\n        <AuthorList>\n          <Author><LastName>Three</LastName><Initials>C</Initials></Author>\n        </AuthorList>\n        <PublicationTypeList>\n          <PublicationType>Journal Article</PublicationType>\n        </PublicationTypeList>\n      </Article>\n    </MedlineCitation>\n  </PubmedArticle>\n</PubmedArticleSet>"
+}

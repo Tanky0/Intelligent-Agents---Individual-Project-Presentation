@@ -1,0 +1,51 @@
+pmid,include,rationale
+32768971,exclude,"review, no original data"
+32825892,exclude,"expert consensus, not study"
+32959892,exclude,in-vitro only
+32962613,exclude,"review, not primary study"
+32972027,exclude,"review, ivermectin not focus"
+33137493,include,"comparative study, ivermectin assessed"
+33336780,exclude,"review, not primary study"
+33378008,exclude,no abstract
+33500022,exclude,in-silico only
+33779964,exclude,"review, not primary study"
+33843474,exclude,in-silico only
+33877121,exclude,"clinical guidelines, no outcomes"
+34088863,exclude,not ivermectin treatment study
+34117145,exclude,no abstract
+34170074,exclude,animal study
+34171154,exclude,"physician survey, no outcomes"
+34364698,exclude,no abstract
+34469921,exclude,no abstract
+34751680,exclude,retraction notice
+35080630,exclude,no abstract
+35232458,exclude,"ivermectin incidental, eclampsia case"
+35273939,include,"ivermectin programme, mortality outcome"
+35470771,exclude,"simulation study, no patients"
+35645195,exclude,"review, not primary study"
+35717393,exclude,in-vitro only
+35738778,include,"RCT, hospitalisation outcome"
+35775946,exclude,social media study
+36323824,exclude,no abstract
+36374569,exclude,"purchasing trends, no outcomes"
+36723943,exclude,"dispensing study, no outcomes"
+36851310,exclude,"ivermectin incidental, CKD study"
+36975598,exclude,"cancer cells, not COVID-19"
+37038566,exclude,"prophylaxis, not treatment"
+37064449,exclude,"physician survey, no outcomes"
+37093458,exclude,"review, not primary study"
+37335665,exclude,"losartan study, not ivermectin"
+37933389,exclude,"review, not primary study"
+37961094,exclude,in-vitro only
+38138562,exclude,"laboratory assay, no patients"
+38701093,exclude,in-vitro only
+38860720,exclude,"review, not primary study"
+38969585,exclude,"decision framework, no outcomes"
+39096169,exclude,ivermectin not in cases
+39156229,exclude,no abstract
+39244809,exclude,"review, no original data"
+40983056,exclude,"poisoning, not COVID treatment"
+41037346,exclude,"review, not primary study"
+41174151,exclude,animal study
+41416596,exclude,animal study
+42426878,exclude,"commentary, not primary study"

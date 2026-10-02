@@ -1,0 +1,51 @@
+pmid,include,rationale
+32251768,exclude,in-vitro only
+32942671,exclude,"review, not primary study"
+32967116,exclude,in-silico only
+33196946,exclude,"review, not primary study"
+33612572,exclude,no original patient data
+33788116,exclude,animal cell study
+33864917,exclude,"prophylaxis, not treatment"
+33867777,exclude,in-silico only
+33983065,include,"RCT, recovery and viral outcomes"
+33994641,include,"retrospective cohort, treatment outcomes"
+34044300,exclude,"review, not primary study"
+34226801,exclude,"review, not primary study"
+34416813,exclude,"clinical consensus, no outcomes"
+34466270,exclude,"review, not primary study"
+34488083,exclude,"review, not primary study"
+34497279,exclude,in-vitro only
+34548836,exclude,in-silico only
+34573986,exclude,"systematic review, not primary"
+34808313,exclude,"comment, not primary study"
+34867318,exclude,"review, not primary study"
+34999239,include,"RCT, viral load and safety"
+35006547,exclude,"position statement, not primary study"
+35227056,exclude,no original patient data
+35305539,exclude,"review, not primary study"
+35341739,exclude,"guideline, not primary study"
+35350599,exclude,ivermectin treats demodicosis
+35367622,exclude,"review, not primary study"
+35383577,exclude,"letter, secondary analysis"
+35898916,exclude,"hypothesis, no patient outcomes"
+36034008,exclude,"prevention-use survey, no outcomes"
+36160358,exclude,"perspective, no original data"
+36183307,exclude,"guideline, not primary study"
+37302406,include,"RCT, long-COVID outcome"
+37377231,include,"pharmacovigilance, ivermectin-specific AEs"
+37532918,exclude,ivermectin treats strongyloidiasis
+37663091,exclude,"review, not primary study"
+37694159,exclude,"drug-dispensing study, no outcomes"
+37778365,exclude,"editorial, no primary data"
+37958503,exclude,"review, not primary study"
+38134186,exclude,animal pharmacokinetic study
+38178941,exclude,"treatment-use survey, no outcomes"
+38536458,exclude,"scabies review, not COVID treatment"
+38832636,exclude,retraction notice
+39457519,exclude,"systematic review, not primary"
+39744515,exclude,in-silico only
+39822439,exclude,ivermectin treats strongyloidiasis
+39892677,exclude,in-vitro only
+40124821,exclude,"systematic review, not primary"
+40452530,exclude,incidental treatment mention
+41662713,exclude,"guideline, not primary study"

@@ -1,0 +1,41 @@
+# What git hands over, on any machine.
+#
+# Without this, git decides from the setting on whoever cloned the repository.
+# This one was checked out with core.autocrlf=true, so its files are held with
+# Windows line endings while git stores them with Unix ones. That is fine until
+# something fingerprints exact bytes, and two things here do.
+#
+# The record of an export lists every file with its fingerprint, and a fresh
+# clone is checked against it. Tried once, fifty-nine of sixty-eight files
+# disagreed. All the differences were line endings rather than logical
+# content.
+#
+# The manifest fingerprints each saved reply, and replay refuses a reply whose
+# bytes have changed. Those fingerprints were taken from the working files
+# here, which have Windows endings, so a clone taken where git checks out Unix
+# endings would refuse to replay all fifteen and the offline demonstration
+# would not run for whoever is reading it.
+
+# Everything git recognises as text is stored with Unix endings and checked out
+# with them too, so a clone holds the same bytes on any machine.
+* text=auto eol=lf
+
+# Except the saved replies, which git is told not to touch at all. Their
+# fingerprints were recorded when they were approved, and re-taking those to
+# suit a formatting change would mean re-approving fifteen files to fix
+# something that is not about their contents.
+#
+# The whitespace rule treats the carriage return as part of the line ending
+# while retaining the other whitespace checks. Without it "git diff --check"
+# reports every line of every reply as trailing whitespace, and a warning that
+# is always wrong is one people stop reading. Turning the whitespace attribute
+# off altogether would have done that too, and would also have stopped git
+# reporting a real trailing space in these files, which is a different thing
+# and one worth knowing about.
+data/recorded_replies/** -text whitespace=cr-at-eol
+
+# Pictures are not text and are never rewritten. text=auto would work this out,
+# and saying so is cheaper than finding out it did not.
+*.png binary
+*.jpg binary
+*.jpeg binary

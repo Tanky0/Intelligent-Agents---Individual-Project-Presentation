@@ -1,0 +1,8 @@
+10.1016/S0140-6736(20)31180-6
+   -> retracted  notices=['retraction', 'retraction', 'retraction', 'retraction']
+   -> RETRACTED: Hydroxychloroquine or chloroquine with or without a macroli
+
+10.1016/j.ijsu.2021.105906
+   -> no_retraction_signal_found  notices=[]
+   -> The PRISMA 2020 statement: An updated guideline for reporting systemat
+

@@ -1,0 +1,7 @@
+{
+  "captured_at": "2026-09-17T05:58:16+00:00",
+  "model": "gemini-3.6-flash",
+  "question": "You are planning the literature search for a systematic review.\n\nResearch question: Does drug X treat condition Y?\nInclude papers that: studies of drug X in condition Y reporting an outcome\nExclude papers that: reviews and opinion pieces\n\nBreak this into an ordered list of searches. Each one says what it is looking for in a sentence, which service to search, and the search text to send.\n\nTwo services can be searched. Use 'pubmed' for clinical and biomedical literature, where its subject headings and field tags work. Use 'semantic scholar' for broader coverage and for work that may not be indexed in PubMed.\n\nOrder them so the searches most likely to find the central papers come first, because a run may stop before reaching the end of the list.\n[schema:SubgoalList]",
+  "answer": "{\"subgoals\":[{\"purpose\":\"find trials of drug X in condition Y\",\"source\":\"pubmed\",\"query\":\"drug X condition Y trial\"}]}",
+  "run": "8617eba8c6e8"
+}

@@ -1,0 +1,22 @@
+Semantic Scholar live check
+date: 28 August 2026
+key present: True
+rate asked for: 0.8 requests a second
+gap kept between requests: 1.25 seconds
+header sent: True
+
+query: ivermectin covid-19 treatment
+papers returned: 3
+  - Ivermectin | COVID-19 Treatment Guidelines
+    year: 2022  doi: none  pmid: none  text: metadata
+  - A Novel Study on the Hematological and Physiological Disturbance of Iv
+    year: 2023  doi: 10.21608/eajbsc.2023.307035  pmid: none  text: abstract
+  - Ivermectin | COVID-19 Treatment Guidelines
+    year: 2022  doi: none  pmid: none  text: metadata
+
+second request, sent straight after the first, returned 1 paper
+
+first search, including opening the connection, took: 4.78 seconds
+the two requests were sent 1.25 seconds apart
+the gap the limiter requires is 1.25 seconds
+within the one request a second the key allows: True

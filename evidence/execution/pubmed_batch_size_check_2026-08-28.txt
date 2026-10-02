@@ -1,0 +1,13 @@
+PubMed batch size check
+date: 28 August 2026
+batch size: 100
+identifiers asked for: 100
+requests this needs: 1
+
+records returned: 100
+failures: 0
+identifiers asked for but not returned: 0
+
+records carrying an abstract: 87
+records with an empty title: 0
+a truncated reply would show up as records missing, or as an empty title

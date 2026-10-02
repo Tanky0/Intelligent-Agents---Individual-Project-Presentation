@@ -1,0 +1,111 @@
+# Streamlit reads this file from the folder the application is started in,
+# which the README's Running command and the review-screen launcher both
+# make the repository root. It holds four groups of settings, and the reason
+# for each.
+#
+# The "Deploy" control at the top right is Streamlit's own, for publishing
+# an application to its cloud; nothing of this project's is behind it, and
+# the reading of the screen on 17 September asked whether it could go
+# without losing the Settings menu and its choice of appearance. It can.
+# Streamlit's own description of the setting below: "viewer" hides the
+# developer options, which are Deploy, Rerun and Clear cache, from the
+# toolbar and the menu, and keeps the viewer options, which are Print,
+# Record a screencast, the appearance under Settings, and About. The
+# default, "auto", shows the developer options whenever the application is
+# opened through localhost, which is how every reviewer here opens it.
+# "minimal" was the other choice and would have hidden the menu with the
+# appearance in it.
+#
+# The accent colour is the violet the side panel is drawn in, #440099,
+# chosen on the evening of 17 September (Pantone's Violet C) in place of
+# Streamlit's default red: a red "Display Approved" button read as a
+# warning, the panel and its two action buttons were asked for in one
+# violet, and Streamlit's lighter purple70, tried first, gave way to this
+# darker one. The accent reaches, besides those buttons, the outline of
+# the note box while it is being written in, the switch on the results
+# page when it is on, and the record's line when the pointer is on it
+# (each read from the installed bundle); links keep Streamlit's blue,
+# which does not follow the accent. Measured before the colour was set:
+# #440099 is 12.31 to 1 against the light page, so an outline or a switch
+# drawn in it clears the 3 to 1 WCAG 2.2 asks of a control's boundary
+# (1.4.11) there; against the dark page it is 1.54 to 1, all but invisible,
+# so the dark appearance's accent is the lighter violet of the chosen
+# pair, #ad73e5, the action buttons' border colour, at 5.72 to 1; that
+# split was settled the same evening. The one thing it leaves under 3 to
+# 1 is the halo Streamlit draws round a focused control at half opacity,
+# 2.3 to 1 on the dark page (it was 2.2 with the default red); the
+# one-pixel outline beside it is the 5.72. The violet text colour follows
+# the accent on each appearance: it is what draws the current step of the
+# progress line at the top of each screen (asked for on 18 September),
+# through Streamlit's own coloured text, so the page writes no colour of
+# its own for it.
+#
+# The side panel is #440099 with white text on both appearances, as asked
+# for on 17 September, so the panel that holds the decisions and the two
+# actions draws the eye. White on it is 12.31 to 1, above the 4.5 to 1
+# asked of text (1.4.3). The panel's borders are white too: the two thin lines drawn
+# on the mock-up between the counts, the help and the storing sentence are
+# Streamlit's dividers, which take the border colour, and the panel's plain
+# buttons take the same outline. Streamlit takes the panel's green, red and
+# yellow boxes from the palette of the appearance in use, whose text
+# colours were chosen for a light or a dark grey and cannot be read on the
+# violet (the light appearance's green, #158237, is 1.1 to 1 against the
+# earlier purple70 and no better here), so in the panel a box is white text
+# on purple80 of Streamlit's palette, 6.73 to 1, a violet lighter than the
+# panel so the box shows as a box (1.83 to 1 against it), and the words say
+# whether it is a confirmation or a failure. The blue box, Streamlit's info
+# box, is the same white on the same purple80: it carries the panel's one
+# instruction, "When you are done, press Display Approved below.", which
+# the second session of 19 September found did not stand out as a bold
+# line on the violet; a pale box as the confirmation boxes are was asked
+# for; without the two lines below, Streamlit would draw it in its own
+# blue at a tenth of its strength, unreadable here.
+#
+# In the dark appearance the outline of the three answer buttons measured
+# 1.97 to 1 against the page (#43454B on #0E1117, read from the pixels of
+# the session's Chrome screenshot of 16 September, A3-dark-1440-full-
+# chrome-papers). WCAG 2.2 asks 3 to 1 of the boundary of a control
+# (1.4.11), and in that session the buttons did not look pressable (UX-01,
+# UX-05). The colour set here is gray70 of Streamlit's own dark palette:
+# 5.09 to 1
+# against the page and 4.78 to 1 against a button's face, so it passes with
+# room and is not a colour invented for this page. A grey nearer the minimum
+# (#6E7280, 3.94 to 1) was the alternative and was not taken, because it is
+# not from the palette and sits close to the line.
+#
+# Every outline of the dark appearance takes this colour, the closed sections
+# too, not only the buttons: the page had one outline colour before and keeps
+# one. The light appearance's outline measured 1.45 to 1 in the same session
+# (#D6D6D9 on white), under the same 3 to 1, and it was decided on
+# 19 September that it goes up as well. It takes the same gray70 as the dark
+# appearance, 3.72 to 1 against the white page and against a plain button's
+# white face, so both appearances have one outline colour from one palette
+# rather than a grey invented for the light page. The base section below is
+# the light appearance; the dark section keeps its own line for the same
+# colour so that a reader of either section sees the outline set.
+
+[client]
+toolbarMode = "viewer"
+
+[theme]
+primaryColor = "#440099"
+violetTextColor = "#440099"
+borderColor = "#808495"
+
+[theme.sidebar]
+backgroundColor = "#440099"
+textColor = "#ffffff"
+borderColor = "#ffffff"
+greenTextColor = "#ffffff"
+redTextColor = "#ffffff"
+yellowTextColor = "#ffffff"
+blueTextColor = "#ffffff"
+greenBackgroundColor = "#6d3fc0"
+redBackgroundColor = "#6d3fc0"
+yellowBackgroundColor = "#6d3fc0"
+blueBackgroundColor = "#6d3fc0"
+
+[theme.dark]
+primaryColor = "#ad73e5"
+violetTextColor = "#ad73e5"
+borderColor = "#808495"

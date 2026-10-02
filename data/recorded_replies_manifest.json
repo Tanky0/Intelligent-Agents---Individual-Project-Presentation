@@ -1,0 +1,111 @@
+{
+  "manifest_version": 2,
+  "what_approval_means": "Approval means somebody accepted this exact file for replay during a demonstration. It says the file is the one that was accepted and has not changed since. It does not say a service produced what is in it, and it does not by itself say the contents may be published.",
+  "what_repository_head_at_review_means": "The commit the repository stood at when the file was reviewed. It is not the commit that carries this record, because a manifest cannot hold the identifier of the commit that adds it. The commit that carries the record is the one that changed this file in the history.",
+  "history_rewrites": [
+    {
+      "decision": "R-10",
+      "completed_at": "2026-09-02T09:55:55+02:00",
+      "what_it_did": "Removed email addresses and the structured contact elements around them from replies, in the current files and in the history. Author names and affiliations were deliberately left in place.",
+      "effect_on_this_manifest": "Identifiers recorded before this date name commits from the earlier history and cannot be reached from the current one."
+    },
+    {
+      "decision": "R-11",
+      "completed_at": "2026-09-02T12:00:00+02:00",
+      "what_it_did": "Removed thirty reply paths from the history, being the twenty withdrawn from the published set and ten renamed or deleted earlier.",
+      "effect_on_this_manifest": "Identifiers changed again. Any recorded before this date names a commit that no longer exists."
+    }
+  ],
+  "files": {
+    "13ca8d674b3e98bf9902.json": {
+      "sha256": "54f549bc31264078701731929ec8a150e2f39814e3f1b2c484d2615098f254f4",
+      "approval_history": [
+        {
+          "approved_at": "2026-09-17T05:58:16+00:00",
+          "approved_sha256": "54f549bc31264078701731929ec8a150e2f39814e3f1b2c484d2615098f254f4",
+          "repository_head_at_review": "43366de934feb080a698fe7808829a46d0a36950",
+          "working_tree_at_review": "the working tree of 17 September, uncommitted changes on 43366de; the five fixture files read in full and copied on 17 September",
+          "fixture_origin": {
+            "written_by": "the author of this project, by running this script",
+            "written_on": "2026-09-16",
+            "what_it_stands_in_for": "a reply from PubMed to one of the run's requests",
+            "copied_from_a_paper": false,
+            "applies_to_sha256": "54f549bc31264078701731929ec8a150e2f39814e3f1b2c484d2615098f254f4"
+          }
+        }
+      ]
+    },
+    "366f0238733196394914.json": {
+      "sha256": "3a89c6999ee6d540771cf009a8552d531f7e8ffa582152286bd8350d2053cff5",
+      "approval_history": [
+        {
+          "approved_at": "2026-09-17T05:58:16+00:00",
+          "approved_sha256": "3a89c6999ee6d540771cf009a8552d531f7e8ffa582152286bd8350d2053cff5",
+          "repository_head_at_review": "43366de934feb080a698fe7808829a46d0a36950",
+          "working_tree_at_review": "the working tree of 17 September, uncommitted changes on 43366de; the five fixture files read in full and copied on 17 September",
+          "fixture_origin": {
+            "written_by": "the author of this project, by running this script",
+            "written_on": "2026-09-16",
+            "what_it_stands_in_for": "an answer from the model to one of the run's prompts",
+            "copied_from_a_paper": false,
+            "applies_to_sha256": "3a89c6999ee6d540771cf009a8552d531f7e8ffa582152286bd8350d2053cff5"
+          }
+        }
+      ]
+    },
+    "4f7aa26159027e4f9320.json": {
+      "sha256": "e56d947658726fd917756891b9bba276814e8717be4b3cb6d30e7c14f4dc3822",
+      "approval_history": [
+        {
+          "approved_at": "2026-09-17T05:58:16+00:00",
+          "approved_sha256": "e56d947658726fd917756891b9bba276814e8717be4b3cb6d30e7c14f4dc3822",
+          "repository_head_at_review": "43366de934feb080a698fe7808829a46d0a36950",
+          "working_tree_at_review": "the working tree of 17 September, uncommitted changes on 43366de; the five fixture files read in full and copied on 17 September",
+          "fixture_origin": {
+            "written_by": "the author of this project, by running this script",
+            "written_on": "2026-09-16",
+            "what_it_stands_in_for": "a reply from PubMed to one of the run's requests",
+            "copied_from_a_paper": false,
+            "applies_to_sha256": "e56d947658726fd917756891b9bba276814e8717be4b3cb6d30e7c14f4dc3822"
+          }
+        }
+      ]
+    },
+    "9d2c8dbaeee00de72bcb.json": {
+      "sha256": "310306ba4b0230e50abf3a633ed15c25a3259a02837bb06a36f98fb46e4b0fa0",
+      "approval_history": [
+        {
+          "approved_at": "2026-09-17T05:58:16+00:00",
+          "approved_sha256": "310306ba4b0230e50abf3a633ed15c25a3259a02837bb06a36f98fb46e4b0fa0",
+          "repository_head_at_review": "43366de934feb080a698fe7808829a46d0a36950",
+          "working_tree_at_review": "the working tree of 17 September, uncommitted changes on 43366de; the five fixture files read in full and copied on 17 September",
+          "fixture_origin": {
+            "written_by": "the author of this project, by running this script",
+            "written_on": "2026-09-16",
+            "what_it_stands_in_for": "an answer from the model to one of the run's prompts",
+            "copied_from_a_paper": false,
+            "applies_to_sha256": "310306ba4b0230e50abf3a633ed15c25a3259a02837bb06a36f98fb46e4b0fa0"
+          }
+        }
+      ]
+    },
+    "f93fe0dcb8e7da003e12.json": {
+      "sha256": "71ff81ec49127c9326e5c4e19e28b164d3b00c0b29582065f4cc0286839d623c",
+      "approval_history": [
+        {
+          "approved_at": "2026-09-17T05:58:16+00:00",
+          "approved_sha256": "71ff81ec49127c9326e5c4e19e28b164d3b00c0b29582065f4cc0286839d623c",
+          "repository_head_at_review": "43366de934feb080a698fe7808829a46d0a36950",
+          "working_tree_at_review": "the working tree of 17 September, uncommitted changes on 43366de; the five fixture files read in full and copied on 17 September",
+          "fixture_origin": {
+            "written_by": "the author of this project, by running this script",
+            "written_on": "2026-09-16",
+            "what_it_stands_in_for": "an answer from the model to one of the run's prompts",
+            "copied_from_a_paper": false,
+            "applies_to_sha256": "71ff81ec49127c9326e5c4e19e28b164d3b00c0b29582065f4cc0286839d623c"
+          }
+        }
+      ]
+    }
+  }
+}
